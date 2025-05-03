@@ -28,7 +28,7 @@ section{
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .button__fill{
