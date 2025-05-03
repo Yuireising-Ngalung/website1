@@ -124,3 +124,32 @@ section{
     justify-content: center;
     align-items: center;
 }
+
+
+/* =================fixed background================ */
+.fixed__background{
+    background-image: url(./assets//19.jpg);
+    background-position: top;
+}
+
+.fixed__background__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fixed__background__container span{
+    display: block;
+    width: 50%;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.fixed__background__container h2{
+    font-size: 2rem;
+}
+
+.fixed__background__container p{
+    margin: 1rem 0;
+}
