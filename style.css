@@ -44,7 +44,7 @@ section{
 .button__fill:hover{
     color: rgb(1, 131, 151);
     background-color: white;
-    transition: 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .button__unfill{
@@ -153,3 +153,67 @@ section{
 .fixed__background__container p{
     margin: 1rem 0;
 }
+
+/* =============Contact Section================ */
+.contact_section{
+    color: black;
+}
+
+.contact__container{
+    display: flex;
+}
+
+.contact__container>*{
+    flex:100%;
+}
+
+.contact__details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact__details p b{
+    font-size: 1.2rem;
+}
+
+.contact__details p span{
+    font-style: italic;
+}
+
+.contact__details p span a{
+    text-decoration: none;
+    color:var(--secondary-color);
+}
+
+
+.contact__form{
+    background-color: var(--primary-color);
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.contact__form label{
+    font-weight: 700;
+}
+
+.contact__form input{
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+}
+
+.contact__form input:focus{
+    border: 2px solid red;
+}
+
+@media screen and (max-width:767px) {
+    .contact__container{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+
