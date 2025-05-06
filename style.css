@@ -82,6 +82,7 @@ img{
 .hero__container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .hero__text{
@@ -189,10 +190,12 @@ img{
 
 .contact__container{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact__container>*{
-    flex:100%;
+    width: 100%;
 }
 
 .contact__details{
@@ -223,6 +226,10 @@ img{
     display: flex;
     flex-direction: column;
     gap:15px;
+}
+
+.contact__form div>*{
+    width: 100%;
 }
 
 .contact__form label{
