@@ -65,6 +65,11 @@ section{
     overflow-x: scroll;
 }
 
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
 /* ======================Navigation section======================== */
 
 
@@ -74,22 +79,45 @@ section{
 
 
 /* ===================Intro Section================== */
-.intro{
+.hero__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__text{
     width: 50%;
 }
 
-.intro h1{
+.hero__text h1{
     font-size: 2rem;
 }
-
-.intro p{
+.hero__text p{
     margin: 2rem 0;
 }
 
 @media screen and (max-width:767px) {
-    .intro{
+    .hero__container{
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .hero__text{
         width: 100%;
     }
+
+    .hero__image{
+        width: 100% !important;
+    }
+}
+
+.hero__image{
+    width: 40%;
+    height: 300px;
+}
+
+.hero__image img{
+    width: 100%;
+    height: 100%;
 }
 
 /* ===============Card Section===================== */
@@ -119,7 +147,7 @@ section{
 
 .grid__cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
     gap: 15px;
     justify-content: center;
     align-items: center;
