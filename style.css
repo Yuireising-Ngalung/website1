@@ -12,10 +12,10 @@ body{
     --primary-color: #234240;
     --secondary-color:rgb(1, 131, 151);
     --white-color:#fff;
+    --accent-color:#136c72;
 }
 
 section{
-    color: white;
     padding: 50px 0;
 }
 
@@ -70,6 +70,11 @@ img{
     object-fit: cover;
 }
 
+.flex{
+    display: flex;
+    gap: 15px;
+}
+
 /* ======================Navigation section======================== */
 
 
@@ -87,6 +92,7 @@ img{
 
 .hero__text{
     width: 50%;
+    color: white;
 }
 
 .hero__text h1{
@@ -167,6 +173,7 @@ img{
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: #333;
 }
 
 .fixed__background__container span{
@@ -181,6 +188,34 @@ img{
 
 .fixed__background__container p{
     margin: 1rem 0;
+}
+
+/* ===============quality design section =================== */
+
+@media (width>767px){
+    .quality_design{
+        display: flex;
+    }
+}
+.quality_design_left h2{
+    color: var(--secondary-color);
+}
+
+.quality_design_left p{
+    margin: 2em 0;
+}
+
+.quality_design_right{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3em;
+}
+
+.quality_design_right .quality_design_small_card{
+    text-align: center;
 }
 
 /* =============Contact Section================ */
