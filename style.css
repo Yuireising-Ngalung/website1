@@ -219,6 +219,67 @@ img{
     text-align: center;
 }
 
+/* ================two column section====================  */
+
+.yellow-section{
+    background-color: #f3eed9;
+    padding: 7em 0;
+}
+
+.yellow-section-container p{
+    letter-spacing: 0.3em;
+}
+
+.yellow-section-container h2{
+    color: maroon;
+}
+
+.quality-design{
+    text-align: center;
+}
+
+.quality-design h2{
+    margin-bottom: 1em;
+}
+
+.black-section{
+    background-color: #222c2a;
+    color: white;
+}
+
+.brown-section{
+    background-color: #824936;
+    color: white;
+}
+
+.section-row p{
+    margin: 1em 0;
+}
+
+@media (width>767px) {
+    .yellow-section-container h2{
+        font-size: 3rem;
+    }  
+
+    .section-row{
+        display:flex;
+        gap: 15px;
+    }
+
+    .section-row > *{
+        width: 100%;
+    }
+
+    .section-row img{
+        height: 300px;
+        object-fit: center;
+    }
+
+    .row-reverse{
+        flex-direction: row-reverse;
+    }
+}
+
 /* =============Contact Section================ */
 .contact_section{
     color: black;
